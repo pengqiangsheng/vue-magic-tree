@@ -10,6 +10,12 @@
 
 有任何问题，直接留下issue。
 
+
+## 掘金
+
+[Element、Iview、Ztree性能对比专栏](https://juejin.im/post/5e17c1615188254bee1b452f)
+
+
 ## 测试地址
 
 线上测试地址：[测试](http://tree.inner.ink/)
@@ -125,3 +131,5 @@ onRightClick: (...arg) => {
 
 
 更详细的内容，移步至[ztree官网](http://www.treejs.cn/v3/main.php#_zTreeInfo)
+
+
