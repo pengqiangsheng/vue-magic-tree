@@ -1,0 +1,25 @@
+{
+  "name": "vue-magic-tree",
+  "version": "0.1.1",
+  "author": "pengqiangsheng",
+  "main": "src/components/ztree.vue",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:pengqiangsheng/vue-magic-tree.git"
+  },
+  "files": [
+    "src/components"
+  ],
+  "keywords": [
+    "vue",
+    "tree",
+    "ztree",
+    "magic"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/pengqiangsheng/vue-magic-tree",
+  "private": false,
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

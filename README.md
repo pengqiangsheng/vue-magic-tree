@@ -25,8 +25,7 @@
 ### 引入vue-magic-tree
 
 ```js
-// 注意此组件依赖jquery
-yarn add vue-magic-tree jquery
+yarn add vue-magic-tree
 ```
 ### props配置
 
