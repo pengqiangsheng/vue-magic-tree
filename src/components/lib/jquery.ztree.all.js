@@ -83,11 +83,7 @@
           icon: "icon",
           nodeType: "nodeType"
         },
-        iconMap: {
-          0: 'iconjianyuede',
-          1: 'icon-xuexiaodanwei',
-          2: 'iconhuiyuan'
-        },
+        iconMap: {},
         simpleData: {
           enable: false,
           idKey: "id",

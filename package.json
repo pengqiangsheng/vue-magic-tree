@@ -1,11 +1,11 @@
 {
   "name": "vue-giant-tree",
-  "version": "0.1.2",
-  "author": "refined-x [tower1229@foxmail.com]",
-  "main": "./dist/vue-giant-tree.common.js",
+  "version": "0.0.1",
+  "author": "pengqiangsheng",
+  "main": "src/components/ztree.vue",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tower1229/Vue-Giant-Tree.git"
+    "url": "git+git@github.com:pengqiangsheng/vue-magic-tree.git"
   },
   "files": [
     "dist"
@@ -13,15 +13,16 @@
   "keywords": [
     "vue",
     "tree",
-    "ztree"
+    "ztree",
+    "magic"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/tower1229/Vue-Giant-Tree/blob/master/README.md",
+  "homepage": "https://github.com/pengqiangsheng/vue-magic-tree",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --dest dist --name vue-giant-tree ./src/components/ztree.vue",
+    "build-bundle": "vue-cli-service build --target lib --dest dist --name vue-magic-tree ./src/components/ztree.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

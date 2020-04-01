@@ -22,8 +22,9 @@
 <script>
 const bigData = require("@/mock/big-tree.json");
 const simpleData = [
-  { id: 1, pid: 0, name: "随意勾选 1", open: true, nodeType: 0, chkDisabled: true },
-  { id: 11, pid: 1, name: "随意勾选 1-1", open: true, nodeType: 1},
+  // 设置了节点类型后，就可以显示自定义图标 customType 此名称任意
+  { id: 1, pid: 0, name: "随意勾选 1", open: true, customType: 0, chkDisabled: true },
+  { id: 11, pid: 1, name: "随意勾选 1-1", open: true, customType: 1},
   { id: 111, pid: 11, name: "随意勾选 1-1-1", },
   { id: 112, pid: 11, name: "随意勾选 1-1-2",  },
   { id: 12, pid: 1, name: "随意勾选 1-2", open: true,  },
@@ -37,7 +38,6 @@ const simpleData = [
   { id: 23, pid: 2, name: "随意勾选 2-3",  }
 ];
 const dataQueue = [bigData.data, simpleData];
-
 export default {
   name: "app",
   components: {
@@ -58,15 +58,25 @@ export default {
         },
         check: {
           enable: true,
-          
         },
         data: {
           simpleData: {
             enable: true,
             pIdKey: "pid"
+          },
+          // 设置图标库(采用iconfont class形式)
+          iconMap: {
+            0: 'iconjianyuede',
+            1: 'icon-xuexiaodanwei',
+            2: 'iconhuiyuan'
+          },
+          // 设置对应每个节点的节点类型，与数据中customType对应(25行)
+          key: {
+            nodeType: 'customType'
           }
         },
         view: {
+          // 开启图标显示功能
           showIcon: true,
           addHoverDom: this.addHoverDom,
           removeHoverDom: this.removeHoverDom,
@@ -106,8 +116,6 @@ export default {
         })
         item.appendChild(btn);
       }
-
-
     },
     removeHoverDom(treeid, treeNode) {
       const item = document.getElementById(`${treeNode.tId}_a`);
@@ -128,7 +136,7 @@ export default {
         return num
       }
       const index = sum(0, 3)
-      const newNode = { name: `newNode_${parseInt(Math.random()* 1e5)}`, nodeType: index }
+      const newNode = { name: `newNode_${parseInt(Math.random()* 1e5)}`, customType: index }
       this.ztreeObj.addNodes(treeNode, newNode)
     },
     clickRemove(treeNode) {

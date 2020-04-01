@@ -1,3 +1,7 @@
+/** 
+@author pengqiangsheng
+*/
+
 <template>
   <div class="ztree" :id="ztreeId"></div>
 </template>
@@ -11,6 +15,7 @@ if(!window.jQuery){
 require("./lib/jquery.ztree.all");
 
 export default {
+  name: 'VueMagicTree',
   props: {
     setting: {
       type: Object,
