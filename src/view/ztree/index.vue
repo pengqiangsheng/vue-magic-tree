@@ -2,7 +2,7 @@
   <div id="z-tree" class="flex-col">
     <div class="wrap flex-1">
       <div class="c">
-        <tree
+        <vue-magic-tree
           :setting="setting"
           :nodes="nodes"
           @onClick="onClick"
@@ -38,10 +38,12 @@ const simpleData = [
   { id: 23, pid: 2, name: "随意勾选 2-3",  }
 ];
 const dataQueue = [bigData.data, simpleData];
+import VueMagicTree from 'vue-magic-tree'
 export default {
   name: "app",
   components: {
-    tree: resolve => require(["@/components/ztree.vue"], resolve)
+    VueMagicTree, // 引入组件包
+    // tree: resolve => require(["@/components/ztree.vue"], resolve) // 本地引入
   },
   data() {
     return {
