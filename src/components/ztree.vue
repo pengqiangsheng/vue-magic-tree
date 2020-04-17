@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import * as $ from "jquery";
+import $ from "jquery";
 if(!window.jQuery){
   window.jQuery = $;
 }
