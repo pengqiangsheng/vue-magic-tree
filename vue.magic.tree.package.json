@@ -1,6 +1,6 @@
 {
   "name": "vue-magic-tree",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "pengqiangsheng",
   "main": "src/components/ztree.vue",
   "repository": {
