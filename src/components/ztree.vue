@@ -299,7 +299,7 @@ export default {
 .ztree >>> .button.checkbox_true_part:after,
 .ztree >>> .button.checkbox_true_part_focus:after {
   top: 5px;
-  left: 2px;
+  left: 1px;
   width: 10px;
   height: 1px;
   -webkit-transform: rotate(0deg) scale(1);
